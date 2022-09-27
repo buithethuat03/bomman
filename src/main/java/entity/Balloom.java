@@ -106,7 +106,7 @@ public class Balloom extends Entity {
                     }
                 }
 
-                if (can_down && y < 396 && status.equals("live")) {
+                if (can_down && y < (gp.tileSize * (gp.maxScreenRow - 1)) && status.equals("live")) {
                     y += speed;
                 } else {
                     direction = "up";
@@ -156,7 +156,7 @@ public class Balloom extends Entity {
                     }
                 }
 
-                if (x < 684 && can_right && status.equals("live")) {
+                if (x < (gp.tileSize * (gp.maxScreenCol - 1)) && can_right && status.equals("live")) {
                     x += speed;
                 } else {
                     direction = "left";

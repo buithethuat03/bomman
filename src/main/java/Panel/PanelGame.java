@@ -17,8 +17,8 @@ public class PanelGame extends JPanel implements Runnable {
     final int fps = 60;
     final long draw_time = 1000000000 / fps;
     public final int tileSize = originalTileSize * scale;
-    public final int maxScreenCol = 20;
-    public final int maxScreenRow = 12;
+    public final int maxScreenCol = 31;
+    public final int maxScreenRow = 13;
     final int screen_width = maxScreenCol * tileSize;
     final int screen_height = maxScreenRow * tileSize;
 
@@ -66,7 +66,7 @@ public class PanelGame extends JPanel implements Runnable {
 
     void setupEntityAndObject() {
         try {
-            player.setLocation(72, 72);
+            //player.setLocation(72, 72);
 //            balloomList[0].setLocationAndDirection(36, 0, "right");
 //            balloomList[1].setLocationAndDirection(108, 36, "right");
 //            balloomList[2].setLocationAndDirection(36, 36, "down");

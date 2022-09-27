@@ -117,7 +117,7 @@ public class Player extends Entity {
                 }
             }
 
-            if (can_down && y < 396) {
+            if (can_down && y < (gp.tileSize * (gp.maxScreenRow) - 1 )) {
                 y +=speed;
             }
         } else if (key.left) {
@@ -158,7 +158,7 @@ public class Player extends Entity {
                 }
             }
 
-            if (x < 684 && can_right) {
+            if (x < gp.tileSize * (gp.maxScreenCol) - 1 && can_right) {
                 x += speed;
             }
         } else if (key.space) {
