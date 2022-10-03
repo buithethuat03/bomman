@@ -162,13 +162,6 @@ public class Player extends Entity {
                 x += speed;
             }
         } else if (key.space) {
-            //System.out.println("Player put a bomb!");
-//            if (gp.bombs.size() < 1) {
-//                System.out.println("Player put a bomb!");
-//                Bomb bomb = new Bomb(x, y, gp);
-//                gp.bombs.add(bomb);
-//                gp.bombCount++;
-//            }
             return "Put a bomb!";
         }
 
@@ -213,6 +206,6 @@ public class Player extends Entity {
                 break;
             }
         }
-        g2.drawImage(image, x, y, gp.tileSize, gp.tileSize, null);
+        g2.drawImage(image, x + speed / 2, y + speed / 2, gp.tileSize - speed, gp.tileSize - speed, null);
     }
 }
